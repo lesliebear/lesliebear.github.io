@@ -1,10 +1,61 @@
-p {
-	font-size: 20px;
-	color: purple;
-	font-family: Arial;
-}
-
 h1 {
 	font-family: Arial, sans-serif;
 	text-align: center;
+	padding: 50px;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: -20px;
+}
+
+li {
+	padding: 2px;
+	font-family: Arial, sans-serif;
+}
+
+html, body{
+	margin: 0px;
+}
+
+.main {
+/*
+	height: 600px;
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+*/
+	height: 678px;
+	margin-left: 0px;
+	margin-right: 0px;
+/*	background: url(http://66.media.tumblr.com/8b644999b084e2e8ffa239ac5f3af574/tumblr_nu3zl0R1bF1tf8vylo1_1280.png) no-repeat center center;
+	background-size: cover;*/
+	background-color: #809fff;
+}
+
+.content1 {
+  	background-color: white;
+	border: 2px double black;
+  	height: 600px;
+	width: 500px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 110px;
+	margin-top: 35px;
+	color: #595959;
+
+}
+
+.content2 {
+	background: url(https://s-media-cache-ak0.pinimg.com/736x/7e/a5/80/7ea5807d81a471478dd7aa5ad13fdca9.jpg) no-repeat center center;
+  	background-size: cover;	
+	border: 2px solid black;
+	height: 600px;
+	width: 500px;
+	float: right;
+	display: inline-block;
+	margin-left: 29px;
+	margin-right: 0px;
+	margin-top: 35px;
+	position: absolute;
 }
