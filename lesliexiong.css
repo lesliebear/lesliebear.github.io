@@ -56,7 +56,7 @@ html, body{
 	float: right;
 	display: inline-block;
 	margin-left: 29px;
-	margin-right: 0px;
+	//margin-right: 0px;
 	margin-top: 35px;
 	position: absolute;
 }
