@@ -1,21 +1,34 @@
 h1 {
-	font-family: Arial, sans-serif;
+//	font-family: Arial, sans-serif;
 	text-align: center;
-	padding: 50px;
+	padding: 20px;
+	font-weight: bold;
+	margin-top: 70px;
 }
 
 ul {
 	list-style-type: none;
-	margin-top: -20px;
+	margin-top: 50px;
 }
 
 li {
-	padding: 2px;
-	font-family: Arial, sans-serif;
+	padding: -2px;
+//	font-family: Arial, sans-serif;
+//	border: 1px solid red;
 }
 
 html, body{
 	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #595959;
+}
+
+a:hover, h3:hover {
+	color: #ff3385;
+	transition: .5s;
 }
 
 .main {
@@ -25,7 +38,8 @@ html, body{
 	margin-left: auto;
 	margin-right: auto;
 */
-	height: 1400px;
+//	height: 1400px;
+	height: 678px;
 	width: 1280px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -34,9 +48,9 @@ html, body{
 	background-color: #809fff;
 }
 
-.content1 {
+.content {
   	background-color: white;
-	border: 2px double black;
+//	border: 2px double black;
   	height: 600px;
 	width: 500px;
 	float: left;
@@ -44,13 +58,16 @@ html, body{
 	margin-left: 110px;
 	margin-top: 35px;
 	color: #595959;
-
+	font-family: 'Jura', serif;
+	font-size: 20px;
+	box-shadow: 2px 2px 1px #888888;
+	border-radius: 10px;
 }
 
-.content2 {
+.mirror {
 	background: url(https://s-media-cache-ak0.pinimg.com/736x/7e/a5/80/7ea5807d81a471478dd7aa5ad13fdca9.jpg) no-repeat center center;
   	background-size: cover;	
-	border: 2px solid black;
+//	border: 2px solid black;
 	height: 600px;
 	width: 500px;
 	float: right;
@@ -59,4 +76,6 @@ html, body{
 	//margin-right: 0px;
 	margin-top: 35px;
 	position: absolute;
+	box-shadow: 2px 2px 1px #888888;
+	border-radius: 10px;
 }
