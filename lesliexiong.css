@@ -28,6 +28,7 @@ a:hover, h3:hover, h1:hover {
 //	color: #ff3385;
 	transition: .3s;
 	color: #809fff;  
+	cursor: pointer;
 }
 
 .main {
@@ -74,3 +75,27 @@ a:hover, h3:hover, h1:hover {
 	box-shadow: 2px 2px 1px #888888;
 	border-radius: 10px;
 }
+
+.mirror p {
+	font-family: 'Jura', serif;
+	font-size: 20px;
+	margin-top: 180px;
+	margin-left: 50px;
+	margin-right: 40px;
+	line-height: 60px;
+	text-align: left;
+//	text-indent: 20px;
+	display: none;
+}
+
+
+
+/*#gerbildiv {
+	border: 1px solid black;
+	padding: 5px;
+}*/
+
+#gerbildiv p{
+	margin-top: 40px;
+	line-height: 40px;
+};
