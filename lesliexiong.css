@@ -16,7 +16,11 @@ li {
 }
 
 html, body{
-	margin: 0px;
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	position: relative;
 }
 
 a {
@@ -32,8 +36,10 @@ a:hover, h3:hover, h1:hover {
 }
 
 .main {
-	height: 678px;
-	width: 1280px;
+//	height: 678px;
+//	width: 1280px;
+	height: 100%;
+	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	/*
@@ -44,6 +50,7 @@ a:hover, h3:hover, h1:hover {
 //	background-color: black;
 	background: url(http://66.media.tumblr.com/abedb2cd56a31c3cce5e98777f983ffe/tumblr_inline_mwbs2sCNxB1qkc0d3.png) no-repeat center center;
 	background-repeat: repeat;
+	position: relative;
 }
 
 .content {
@@ -79,7 +86,7 @@ a:hover, h3:hover, h1:hover {
 .mirror p {
 	font-family: 'Jura', serif;
 	font-size: 20px;
-	margin-top: 180px;
+	margin-top: 120px;
 	margin-left: 50px;
 	margin-right: 40px;
 	line-height: 60px;
@@ -88,14 +95,48 @@ a:hover, h3:hover, h1:hover {
 	display: none;
 }
 
+.mirror img {
+	display: block;
+	width: 350px;
+	height: 261px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
 
-
-/*#gerbildiv {
-	border: 1px solid black;
-	padding: 5px;
-}*/
+#gerbil {
+	line-height: 20px;
+}
 
 #gerbildiv p{
 	margin-top: 40px;
+	margin-bottom: 40px;
 	line-height: 40px;
 };
+
+#overlay{
+	position: fixed; 
+	width: 100%; 
+	height: 100%; 
+}
+
+#overlayContent{
+	position: fixed; 
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	text-align: center;
+	display: none;
+	overflow: hidden;
+	z-index: 100;
+	background: rgba(0,0,0,0.7);
+}
+
+#imgBig, .imgSmall{
+	cursor: pointer;
+}
+
+
+
+

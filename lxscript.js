@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$('#contact').hide();
 		$('#about').fadeIn('slow','swing');
 	});	
+
 	$('#Gerbil').click(function(e){
 		e.preventDefault();
 		$('#about').hide();
@@ -17,6 +18,7 @@ $(document).ready(function(){
 			height: 'auto'
 		});
 	});
+
 	$('#Contact').click(function(e){
 		e.preventDefault();
 		$('#about').hide();
@@ -24,5 +26,18 @@ $(document).ready(function(){
 		$('#gerbildiv').slimScroll({destroy: true});
 		$('#gerbil').hide();
 		$('#contact').fadeIn('slow','swing');
+	});
+
+	$(".imgSmall").click(function(){
+		var thissrc = $(this).attr('src');
+		$("#imgBig").attr("src", thissrc);
+		$("#overlay").show();
+		$("#overlayContent").show();
+	});
+
+	$("#imgBig").click(function(){
+		$("#imgBig").attr("src", "");
+		$("#overlay").hide();
+		$("#overlayContent").hide();
 	});
 });
