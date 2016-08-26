@@ -146,7 +146,8 @@ a:hover, h3:hover, h1:hover {
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 480px){
+and (max-width : 320px)
+and (max-device-width : 480px){
 
 	
 	.content {
