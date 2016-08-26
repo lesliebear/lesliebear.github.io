@@ -158,12 +158,13 @@ and (max-width : 700px){
 	h1 {
 		text-align: center;
 		font-weight: bold;
-		margin-top: 2%;
+		margin-top: -2%;
+		margin-bottom: 8%;
 		font-size: 2em;
 	}
 
 	ul {
-		margin-top: auto;
+		margin-top: -5%;
 		margin-bottom: auto;
 		margin-left: -1%;
 		margin-right: 2%;
@@ -173,7 +174,9 @@ and (max-width : 700px){
 
 	li {
 		float: left;
-		margin-left: 5%
+		margin-left: 5%;
+		margin-bottom: 2%;
+		height: 30px;
 	}
 	
 	.mirror {
