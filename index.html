@@ -3,91 +3,100 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="lesliexiong.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js "></script>
-		<script type="text/javascript" src="jquery.slimscroll.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js "></script>
+		<script type="text/javascript" src="scroll/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript" src="lxscript.js"></script>
+		<!-- <script src="js/bootstrap.min.js"></script> -->
+
 		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
 		<title> Leslie Xiong </title>
 	</head>
 	<body>
-		<div class="main">
-			<div id="overlayContent">
-				<img id="imgBig" src="" alt="" width="700px" />
-			</div>
-			<div class="content">
-				<a href="http://lesliexiong.com/">
-					<h1> Leslie Xiong </h1>
-				</a>
-				<ul>
-					<li>
-						<h3 id="About"> About </h3>
-					</li>
-					<li>
-						<h3 id="Gerbil"> Gerbil </h3>
-					</li>
-					<li hidden>
-						<a href="https://long-beard.bandcamp.com/" target="_blank">
-							<h3 id="Music"> Music </h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/lesliebear" target="_blank">
-							<h3> GitHub </h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/leslie-xiong-458b05100" target="_blank">
-							<h3> LinkedIn </h3>
-						</a>
-					</li>
-					<li>
-						<h3 id="Contact"> Contact </h3>
-					</li>
-				</ul>
-			</div>
-			<div class ="mirror">
-				<div id='scrolldiv'>
-				<div id='aboutdiv'>
-					<p id='about'>
-						<span style="font-size:25px">Hello!</span> 
-						<br>
-						I'm Leslie. I studied Computer Science at Rutgers University with a concentration in Software Engineering. Aside from coding, I also like to make music and experiment with sounds.
-					</p>	
-				</div>	
-				<div id='gerbildiv'>
-					<p id='gerbil'>
-						Gerbil is a Java GUI-based IDE environment aimed at teaching children in upper elementary or middle school how to program in a fun and visual manner. 
-						<br>
-						<img class="imgSmall" src= "gerbil_home.png"/>
-						<br>	
-						The goal is to move an avatar through a randomized, solvable maze by inserting and deleting blocks of code.
-						<br>
-						<img class="imgSmall" src= "gerbil_start.png"/>
-						<br>
-						Users can add conditionals to their code.
-						<br>
-						<img class="imgSmall" src= "gerbil_conditional.png"/>
-						<br>
-						Along with given functions/actions, users are encouraged to also create their own.
-						<br>
-						<img class="imgSmall" src= "gerbil_function.png"/>
-						<br>
-						Watch the gerbil come to life as the corresponding line of code is highlighted with each movement.
-						<br>
-						<img class="imgSmall" src= "gerbil_midplay.png"/>
-						<br>
-						To complete each game, the gerbil must reach its final destination (water bottle) while eating as many fruits as possible.
-						<br>
-						<img class="imgSmall" src= "gerbil_finish.png"/>
-						<br>
-					</p>
+		<div id="overlayContent">
+			<img id="imgBig" src="" alt="" width="700px" />
+		</div>
+		<div id="jumbotron" class="container-fluid">
+			<div class="panebox col-lg-6 col-md-6" id="nav-pane">
+				<div class="row" id="header-row">
+					<h1 class="row" id="name-header"> Leslie Xiong </h1>
 				</div>
-				<div id='contactdiv'>
-					<p id='contact'>
-						Contact me at: 
-						<br>
-						tianqi.xiong@gmail.com 
-					</p>
+				<div class="row" id="links-container">
+					<div class="row" id="links-row">
+						<div class="row" id="about-li">
+							<h3 class="col-md-2 col-md-offset-1 col-xs-2" id="About"> About </h3>
+						</div>
+						<div class="row" id="gerbil-li">
+							<h3 class="col-md-2 col-md-offset-1 col-xs-2" id="Gerbil"> Gerbil </h3>
+						</div>
+						<!-- <li>
+							<a href="https://long-beard.bandcamp.com/" target="_blank">
+								<h3 id="Music"> Music </h3>
+							</a>
+						</li> -->
+						<div class="row" id="github-li"> 
+							<a href="https://github.com/lesliebear" target="_blank" id="Github">
+								<h3 class="col-md-2 col-md-offset-1 col-xs-2"> GitHub </h3>
+							</a>
+						</div>
+						<div class="row" id="linkedin-li">
+							<a href="https://www.linkedin.com/in/leslie-xiong-458b05100" target="_blank" id="LinkedIn">
+								<h3 class="col-md-2 col-md-offset-1 col-xs-2"> LinkedIn </h3>
+							</a>
+						</div>
+						<div class="row" id="contact-li">
+							<h3 class="col-md-2 col-md-offset-1 col-xs-2" id="Contact"> Contact </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panebox col-lg-6 col-md-6" id ="content-pane">
+				<div id='scrolldiv'>
+					<div id='aboutdiv' class="section">
+						<p id='about' class="section">
+							<span style="font-size:25px">Hello!</span> 
+							<br>
+							I'm Leslie. I studied Computer Science at Rutgers University with a concentration in Software Engineering. Aside from coding, I also like to make music and experiment with sounds.
+						</p>	
+					</div>	
+					<div id='gerbildiv' class="section">
+						<p id='gerbil' class="section">
+							Gerbil is a Java GUI-based IDE environment aimed at teaching children in upper elementary or middle school how to program in a fun and visual manner. 
+							<br>
+							<img class="imgSmall" src= "images/gerbil_home.png"/>
+							<br>	
+							The goal is to move an avatar through a randomized, solvable maze by inserting and deleting blocks of code.
+							<br>
+							<img class="imgSmall" src= "images/gerbil_start.png"/>
+							<br>
+							Users can add conditionals to their code.
+							<br>
+							<img class="imgSmall" src= "images/gerbil_conditional.png"/>
+							<br>
+							Along with given functions/actions, users are encouraged to also create their own.
+							<br>
+							<img class="imgSmall" src= "images/gerbil_function.png"/>
+							<br>
+							Watch the gerbil come to life as the corresponding line of code is highlighted with each movement.
+							<br>
+							<img class="imgSmall" src= "images/gerbil_midplay.png"/>
+							<br>
+							To complete each game, the gerbil must reach its final destination (water bottle) while eating as many fruits as possible.
+							<br>
+							<img class="imgSmall" src= "images/gerbil_finish.png"/>
+							<br>
+						</p>
+					</div>
+					<div id='contactdiv' class="section">
+						<p id='contact' class="section">
+							Contact me at: 
+							<br>
+							tianqi.xiong@gmail.com 
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

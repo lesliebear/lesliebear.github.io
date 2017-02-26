@@ -1,26 +1,8 @@
-h1 {
-	text-align: center;
-	padding: 20px;
-	font-weight: bold;
-	margin-top: 70px;
-}
-
-ul {
-	list-style-type: none;
-	margin-top: 50px;
-	margin-left: 30px;
-}
-
-li {
-	padding: -1px;
-}
-
-html, body{
+html, body {
 	margin:0;
 	padding:0;
 	height:100%;
 	width:100%;
-	position: relative;
 }
 
 body {
@@ -29,75 +11,76 @@ body {
 	position: fixed;
 }
 
-a {
-	text-decoration: none;
+#jumbotron {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%
+}
+
+.panebox {
+	height: 85%;
+	box-shadow: 2px 2px 1px #888888;
+	border-radius: 20px;
+}
+
+#nav-pane {
+  	background-color: white;
+	padding-left: 30px;
 	color: #595959;
+	font-family: 'Jura', serif;
+	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 3%;
+}
+
+#content-pane {
+	background: url(https://s-media-cache-ak0.pinimg.com/736x/7e/a5/80/7ea5807d81a471478dd7aa5ad13fdca9.jpg) no-repeat center center;
+  	background-size: cover;
+  	margin-left: 3%;
+  	margin-right: 10%;
+}
+
+#links-container {
+	display: flex;
+	align-items: center;
+	height: 60%;
+}
+
+#name-header {
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+#links-row .row {
+	margin-top: 10%;
+	margin-left: 30%;
+}
+
+a {
+	text-decoration: none !important;
+	color: #595959 !important;
 }
 
 a:hover, h3:hover, h1:hover {
-//	color: #ff3385;
 	transition: .3s;
 	color: #809fff;  
 	cursor: pointer;
 }
 
-.main {
-//	height: 678px;
-//	width: 1280px;
-	height: 100%;
-	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	position: relative;
-}
-
-.content {
-  	background-color: white;
-  	height: 600px;
-	width: 500px;
-	float: left;
-	margin-right: 30px;
-	margin-left: 110px;
-	margin-top: 35px;
-	color: #595959;
+#content-pane p {
 	font-family: 'Jura', serif;
 	font-size: 20px;
-	box-shadow: 2px 2px 1px #888888;
-	border-radius: 10px;
-}
-
-.mirror {
-	background: url(https://s-media-cache-ak0.pinimg.com/736x/7e/a5/80/7ea5807d81a471478dd7aa5ad13fdca9.jpg) no-repeat center center;
-  	background-size: cover;	
-	height: 600px;
-	width: 500px;
-	float: right;
-	display: inline-block;
-	margin-left: 29px;
-	margin-top: 35px;
-	position: absolute;
-	box-shadow: 2px 2px 1px #888888;
-	border-radius: 10px;
-}
-
-.mirror p {
-	font-family: 'Jura', serif;
-	font-size: 20px;
-//	margin-top: 120px;
-//	margin-left: 50px;
-//	margin-right: 40px;
 	margin-left: 13%;
 	margin-right: 10%;
-//	line-height: 60px;
 	text-align: left;
-//	text-indent: 20px;
 	display: none;
 }
 
-.mirror img {
+#content-pane img {
 	display: block;
-//	width: 350px;
-//	height: 261px;
 	height: auto;
 	width: 80%;
 	margin-left: auto;
@@ -135,7 +118,7 @@ a:hover, h3:hover, h1:hover {
 	background: rgba(0,0,0,0.7);
 }
 
-#imgBig, .imgSmall{
+#overlayContent, .imgSmall{
 	cursor: pointer;
 }
 
@@ -147,88 +130,94 @@ a:hover, h3:hover, h1:hover {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 700px){
-
 	
-	.content {
+/*	#nav-pane {
 		width: 90%;
-		height: 40%;
+		height: 20%;
 		margin-left: 5%;
 	}
 
-	h1 {
+	.row h1 {
 		text-align: center;
 		font-weight: bold;
-		margin-top: -2%;
+		margin-top: 0%;
 		margin-bottom: 8%;
-		font-size: 2em;
-		height: 20px;
-		border: 1px solid blue;
-	}
+		font-size: 1.7em;
+		height: 10%;
+	}*/
 
-	ul {
-		margin-top: -5%;
-		margin-bottom: auto;
-	//	margin-left: -1%;
-	//	margin-right: 2%;
-		margin-left: auto;
-		margin-right: auto;
+/*	ul {
 		font-size: .8em;
 		text-align: center;
-		border: 1px solid red;
-		height: 100px;
+		position: relative;
+		margin-top: -5%;
+		margin-left: -5%;
+		padding-left: 5%;
+		width: 100%;
+		height: 10%;
+	}*/
+
+/*	li {
+		display: inline-block;
+		height: 340%;
+		font-size: 1em;
+	}*/
+
+/*	.row h3 {
+		font-size: 1em;
 	}
 
-	li {
-		float: inline-block;
-	//	margin-left: 5%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2%;
-		height: 30px;
-		width: 10px;
-		border: 1px solid green;
+	#about-li, #gerbil-li, #github-li {
+		width: 16%;
+	}
+
+	#linkedin-li, #contact-li {
+		width: 19%;
+	}
+
+	#github-li, #linkedin-li {
+		margin-right: .8%;
 	}
 	
-	.mirror {
+	#content-pane {
 	width: 90%;
-	height: 40%;
+	height: 65%;
 	margin-right: 5%;
 	box-shadow: 2px 2px 1px #888888;
 	border-radius: 10px;
 	position: relative;
 	}
 	
-	.mirror p {
-		font-size: 17px;
+	#content-pane p {
+		font-size: 1em;
 		margin-top: 5%;
-		margin-left: 50px;
-		margin-right: 40px;
-		line-height: 40px;
+		margin-left: 14%;
+		margin-right: 11%;
+		line-height: 11%;
 		text-align: left;
-	//	text-indent: 20px;
 		display: none;
 	}
 
 	#contactdiv p{
 		margin-top: 10%;
-		line-height: 40px;
+		line-height: 2em;
 	}
 
 	#aboutdiv p{
-		margin-top: 5%;
-		line-height: 40px;
+		margin-top: 10%;
+		line-height: 3em;
 	}
 
 	#gerbildiv p{
 		margin-top: 2%;
 		margin-bottom: 5%;
-		line-height: 40px;
+		line-height: 2em;
 	}
 
 	#imgBig {
 		width: 90%;
 		height: auto;
-}
+	}*/
 }
 
 
