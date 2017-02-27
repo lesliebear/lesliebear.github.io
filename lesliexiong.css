@@ -54,20 +54,19 @@ body {
 	margin-top: 50px;
 }
 
-#links-row .row {
+#links-row .link-row {
 	margin-top: 10%;
-	margin-left: 30%;
+	margin-left: 80%;
 }
 
-a {
-	text-decoration: none !important;
-	color: #595959 !important;
-}
-
-a:hover, h3:hover, h1:hover {
+h3:hover {
 	transition: .3s;
 	color: #809fff;  
 	cursor: pointer;
+}
+
+h1 {
+	color: #809fff !important;
 }
 
 #content-pane p {
@@ -127,97 +126,6 @@ a:hover, h3:hover, h1:hover {
 	height: auto;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 700px){
-	
-/*	#nav-pane {
-		width: 90%;
-		height: 20%;
-		margin-left: 5%;
-	}
-
-	.row h1 {
-		text-align: center;
-		font-weight: bold;
-		margin-top: 0%;
-		margin-bottom: 8%;
-		font-size: 1.7em;
-		height: 10%;
-	}*/
-
-/*	ul {
-		font-size: .8em;
-		text-align: center;
-		position: relative;
-		margin-top: -5%;
-		margin-left: -5%;
-		padding-left: 5%;
-		width: 100%;
-		height: 10%;
-	}*/
-
-/*	li {
-		display: inline-block;
-		height: 340%;
-		font-size: 1em;
-	}*/
-
-/*	.row h3 {
-		font-size: 1em;
-	}
-
-	#about-li, #gerbil-li, #github-li {
-		width: 16%;
-	}
-
-	#linkedin-li, #contact-li {
-		width: 19%;
-	}
-
-	#github-li, #linkedin-li {
-		margin-right: .8%;
-	}
-	
-	#content-pane {
-	width: 90%;
-	height: 65%;
-	margin-right: 5%;
-	box-shadow: 2px 2px 1px #888888;
-	border-radius: 10px;
-	position: relative;
-	}
-	
-	#content-pane p {
-		font-size: 1em;
-		margin-top: 5%;
-		margin-left: 14%;
-		margin-right: 11%;
-		line-height: 11%;
-		text-align: left;
-		display: none;
-	}
-
-	#contactdiv p{
-		margin-top: 10%;
-		line-height: 2em;
-	}
-
-	#aboutdiv p{
-		margin-top: 10%;
-		line-height: 3em;
-	}
-
-	#gerbildiv p{
-		margin-top: 2%;
-		margin-bottom: 5%;
-		line-height: 2em;
-	}
-
-	#imgBig {
-		width: 90%;
-		height: auto;
-	}*/
 }
 
 
