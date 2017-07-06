@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 			$('#About').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='About'> About </h5>");
 			$('#Gerbil').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='Gerbil'> Gerbil </h5>");
-			$('#Webistes').unwrap().replaceWith("<h5 class='col-xs-4 group-1 id='Websites'> Websites </h5>");
+			$('#Websites').unwrap().replaceWith("<h5 class='col-xs-4 group-1 id='Websites'> Websites </h5>");
 			$('#Github').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='Github'> Github </h5>");
 			$('#LinkedIn').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='LinkedIn'> LinkedIn </h5>");
 			$('#Contact').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='Contact'> Contact </h5>");
