@@ -64,7 +64,6 @@ $(document).ready(function(){
 	});
 
 	$('#Websites').click(function(){
-		console.log('test');
 		displayContent('#websitesdiv', '#websites');
 	});
 
