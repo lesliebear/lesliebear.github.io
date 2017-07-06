@@ -26,8 +26,8 @@ $(document).ready(function(){
 			$('#About').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='About'> About </h5>");
 			$('#Gerbil').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='Gerbil'> Gerbil </h5>");
 			$('#Websites').unwrap().replaceWith("<h5 class='col-xs-4 group-1 id='Websites'> Websites </h5>");
-			$('#Github').unwrap().replaceWith("<h5 class='col-xs-4 group-1' id='Github'> Github </h5>");
-			$('#LinkedIn').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='LinkedIn'> LinkedIn </h5>");
+			$('#Github').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='Github'> Github </h5>");
+			// $('#LinkedIn').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='LinkedIn'> LinkedIn </h5>");
 			$('#Contact').unwrap().replaceWith("<h5 class='col-xs-6 group-2' id='Contact'> Contact </h5>");
 
 			$('.group-1').wrapAll("<div class='row group-row'></div>");
@@ -37,7 +37,7 @@ $(document).ready(function(){
 			$('#nav-pane').css('color', '#809fff');
 			$('#links-row h5').css('color', '#809fff');
 			$('#links-row h5').css('text-align', 'center');
-			$('#LinkedIn').css('margin-top', '5px');
+			// $('#LinkedIn').css('margin-top', '5px');
 			$('#Contact').css('margin-top', '5px');
 
 			$('#about').css('margin-top', '20px').css('line-height', '50px');
@@ -106,8 +106,8 @@ $(document).ready(function(){
 		window.open('https://github.com/lesliebear', '_blank');
 	});
 
-	$('#LinkedIn').click(function(){
-		window.open('https://www.linkedin.com/in/leslie-xiong-458b05100', '_blank');
-	});
+	// $('#LinkedIn').click(function(){
+	// 	window.open('https://www.linkedin.com/in/leslie-xiong-458b05100', '_blank');
+	// });
 	
 });
