@@ -11,6 +11,22 @@ body {
 	position: fixed;
 }
 
+a {
+	text-decoration: none !important;
+	color: #333 !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+	transition: .3s;
+	color: #809fff !important;  
+	cursor: pointer;
+}
+
+a:visited {
+	text-decoration: none !important;
+}
+
 #jumbotron {
 	display: flex;
 	align-items: center;
@@ -126,6 +142,9 @@ h1 {
 	height: auto;
 }
 
+#websitesdiv {
+	margin-top: 20%;
+	line-height: 60px;
 }
 
 
